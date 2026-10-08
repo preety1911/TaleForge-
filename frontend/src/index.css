@@ -1,0 +1,54 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Fredoka', 'Outfit', sans-serif;
+  }
+}
+
+/* Comic dots background pattern */
+.bg-dots {
+  background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.bg-dots-amber {
+  background-image: radial-gradient(#fde68a 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+/* Speech bubble pointer */
+.speech-bubble-bottom:after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 32px;
+  border-width: 12px 12px 0;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  display: block;
+  width: 0;
+}
+
+.speech-bubble-bottom:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  border-width: 14px 14px 0;
+  border-style: solid;
+  border-color: #0f172a transparent;
+  display: block;
+  width: 0;
+}
+
+/* Form input styling ensuring generous inner padding and clean alignment */
+.comic-input {
+  box-sizing: border-box;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+  padding-top: 0.875rem !important;
+  padding-bottom: 0.875rem !important;
+}
